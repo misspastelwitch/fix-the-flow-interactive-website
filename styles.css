@@ -66,7 +66,7 @@ header {
 
 /*Navigation*/
 
-.logo {
+logo {
     width: 125px;
     height: 75px;
 }
@@ -84,16 +84,6 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
 }
-
-@keyframes regenboog {
-	100% {
-		background-position:right top;
-	}
-}
-
-input:has(:user-invalid) {
-    background-color: #471b2b;
-  }
 
 /*  */
 navbuttons {
@@ -123,6 +113,13 @@ navbuttons {
 }
 
 
+
+input[type="text"]:user-invalid {
+    background-color: #B47F92 !important;
+  }
+inputclick {
+    background-color: #F0E5E9;
+}
  button:hover,
  button:focus-visible{
 	animation-play-state:running;

@@ -14,19 +14,32 @@ showMoreButton.addEventListener('click', function() {
 })
 
 
-//let showlessButton = document.querySelector('.showingmore');
-//showlessButton.addEventListener('click', function() {
-//showlessButton.classList.remove('showingmore');
-//showlessButton.classList.add('showingless');
-//})
-
 //search field
 
 let inputElement = document.querySelector('input');
-
 inputElement.addEventListener('invalid', function(ev) {
-
   inputElement.setCustomValidity('fill this field in to search');
 
 });
 
+//trying to get the search field to go back to white after being clicked in invalid state
+let inputElement = document.querySelector('input');
+inputElement.addEventListener('click', clickHandler) {
+  function clickHandler(event) {
+    if (event.click = true) {
+        input.classList.add('click');
+  }
+}
+}
+
+
+
+//comment button
+
+let commentButton = document.querySelector('input');
+
+commentButton.addEventListener('invalid', function(ev) {
+
+  commentButton.setCustomValidity('fill this field in to comment');
+
+});
