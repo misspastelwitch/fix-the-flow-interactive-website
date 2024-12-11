@@ -1,0 +1,407 @@
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+:root {
+    /*typography*/
+    --primary-font: "inter", serif; 
+    --secondary-font: "jost", serif;
+
+    /*background*/
+    --white: #fff;
+    --black: #333;
+    --primary-color: #6a0025;
+    --secondary-color-dark: #1F000B;
+    --secondary-color-light:#f4eaee;
+
+    /*buttons*/
+
+    --button-normal: #F0E5E9;
+    --button--text-normal: #1F000B;
+    --button-hover: #6a0025;
+    --button-text-active: #fff;
+    --button-active:  #B47F92;
+    --button-active-hover: #4A0019;
+
+}
+
+body {
+    font-family: var(--primary-font);
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+    color: #333;
+}
+
+/* General*/
+.container {
+    max-width: 1536px;
+    margin-inline:auto;padding-inline:16px}
+
+.general {
+        margin-top: 1rem;
+        margin-bottom: 1rem
+}
+
+@media (min-width: 991px) {
+    .general {
+        flex-direction: row;
+        display: flex;
+        gap: 20px;
+        box-sizing: border-box;
+        margin-top: 2rem;
+        margin-bottom: 2rem
+    }
+}
+
+header {
+    background-color: #6a0025;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+
+/*Navigation*/
+
+.logo {
+    width: 125px;
+    height: 75px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-top: 30px;
+    
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@keyframes regenboog {
+	100% {
+		background-position:right top;
+	}
+}
+
+/*  */
+navbuttons {
+	appearence:none;
+	
+	padding:.5em 1em;
+	
+	background-image:
+		linear-gradient(
+			45deg,
+			var(#6a0025),
+			var(#e15f8d),
+			var(#f191b2),
+
+		);
+	background-size:200% 200%;
+	background-position:left bottom;
+	border:none;
+	border-radius:2em;
+	
+	font:inherit;
+	color:var(--wit);
+	
+	outline:none;
+	cursor:pointer;
+	
+	animation:navbuttons 2s infinite linear paused;
+}
+
+
+ button:hover,
+ button:focus-visible{
+	animation-play-state:running;
+}
+
+
+button:active {
+	box-shadow:inset 0 .5em 0 var(--zwart);
+	padding:1em 1em 0em;
+}
+*/
+
+/* Webinar */
+
+
+.webinar {
+    flex: 1 1 60%;
+    min-width: 60%;
+    height: 100%;
+    box-sizing: border-box
+}
+
+@media (min-width: 991px) {
+    .webinar {
+        min-width:60%
+    }
+}
+
+iframe {
+    border-radius: 10px
+}
+
+/* Comments */
+
+
+.commentsection {
+    min-width:35%
+    max-width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px #0003,0 6px 20px #00000030;
+    box-sizing: border-box
+}
+
+@media (min-width: 991px) {
+    .commentsection {
+        flex: 1 1 35%;
+        max-width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px #0003,0 6px 20px #00000030;
+        box-sizing: border-box
+        min-width:35%
+    }
+}
+
+.textarea {
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    margin: 0;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box
+}
+
+.comment {
+    width: 119px;
+    height: 40px;
+    border-radius: 10px;
+    background: #6b0237;
+    color: #fadddd;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px
+}
+
+/*Speaker Card Show More button*/
+
+.showmore {
+    width: 119px;
+    height: 40px;
+    border-radius: 10px;
+    background: #6b0237;
+    color: #fadddd;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px
+    border-radius: .4em;
+    cursor: pointer;
+    display: block;
+    + p.speakerinfo {
+        display: none;
+    }
+}
+
+.showingmore {
+    display: block;
+    + p.speakerinfo {
+        display: block;
+    }
+}
+
+.showingless {
+    border-radius: .4em;
+    cursor: pointer;
+    display: block;
+    + p.speakerinfo {
+        display: none;
+    }
+}
+
+/* Speaker Card*/
+
+.speakercard {
+    background-color: #fff;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #0003,0 6px 20px #00000030;
+    margin-top: 2rem;
+    margin-bottom: 2rem
+}
+
+
+@media (min-width: 630px) {
+    .speakercard {
+        padding:12px
+    }
+}
+
+.speakerpicture {
+    width: 100px
+}
+
+.header {
+    color: #6b0237;
+    font-size: 24px;
+    font-weight: 700
+}
+
+.subheader {
+    color: #6b0237;
+    font-size: 18px;
+    font-weight: 700
+}
+
+.speakerinfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #6b0237;
+}
+
+
+/* Contourings */
+
+
+.contourings {
+    background-color: #fff;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #0003,0 6px 20px #00000030;
+    margin-top: 2rem;
+    margin-bottom: 2rem
+}
+
+@media (min-width: 630px) {
+    .parotid-wrapper {
+        margin-top:1rem;
+        margin-bottom: 1rem
+    }
+}
+
+.headings {
+    color: #6b0237;
+    font-size: 30px
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px
+}
+
+@media (min-width: 630px) {
+    .card {
+        grid-template-columns:repeat(2,1fr)
+    }
+}
+
+@media (min-width: 991px) {
+    .card {
+        grid-template-columns:repeat(3,1fr)
+    }
+}
+
+.carddiv {
+    background-color: #f0f0f0;
+    padding: 18px;
+    width: 100%;
+    margin-top: 1.5rem;
+    border-radius: 10px
+}
+
+.cardheader {
+    color: #6b0237;
+    font-size: 18px;
+    font-weight: 700
+}
+
+.cardinfo {
+    color: #6b0237;
+    margin-top: 14px
+}
+
+.cardimg {
+    margin-top: 1rem;
+    width: 100%
+}
+
+/* Articles */ 
+
+.articles {
+    background-color: #fff;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #0003,0 6px 20px #00000030;
+    margin-top: 2rem;
+    margin-bottom: 2rem
+}
+
+
+.articlecard {
+    gap:1rem;
+    flex-direction: column
+}
+
+@media (min-width: 991px) {
+    .articlecard {
+        display: flex;
+        gap: 2rem
+    }
+}
+
+
+
+.articlebutton {
+    width: 119px;
+    height: 40px;
+    border-radius: 10px;
+    background: #6b0237;
+    color: #fadddd;
+    border: none;
+    font-size: 16px;
+    cursor: pointer
+
+}
+
+/* Footer */ 
+
+footer {
+    background-color: #6a0025;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    gap: 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}

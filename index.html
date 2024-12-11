@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="assets/favicon.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oncollaboration</title>
+<link rel="stylesheet" href="https://nawallox.github.io/look-and-feel-styleguide/oncollaboration.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <header>
+      <nav>
+          <ul>
+            <li> <img src="/assets/avllogo.png"
+              alt="Logo"
+              class="logo"
+            /></li>
+              <li><a class="navbuttons" href="#">Webinars</a></li>
+              <li><a class="navbuttons" href="#">Contouring</a></li>
+              <li><a class="navbuttons" href="#">Articles</a></li>
+              <li><a class="navbuttons" href="#">Profile</a></li>
+              <span
+              class="hamburger"
+              style="font-size: 34px; cursor: pointer; color: white;"
+              >&#9776;</span
+            >
+          </ul>
+      </nav>
+      <div class="search">
+          <input type="text" placeholder="I'm looking for...">
+      </div>
+  </header>
+
+  <section class="main-page">
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2 class="headings">Now playing: </h2>
+      <div class="general">
+        <div class="webinar">
+          <iframe
+            width="100%"
+            height="450"
+            src="https://www.youtube.com/embed/4SzdbF9o1SU"
+          ></iframe>
+        </div>
+
+        <div class="commentsection">
+          <h1 class="headings">Comment</h1>
+          <textarea
+            style="width: 100%"
+            class="textarea"
+            placeholder="Write your comment here..."
+          ></textarea>
+
+          <button class="comment">Comment</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Speaker profile  -->
+    <div class="container">
+      <div class="speakercard">
+        <div class="speakerinfo">
+          <div>
+            <img
+              src="assets/nurse.png"
+              alt="Nurse Img"
+              class="speakerpicture"
+            />
+          </div>
+
+          <div>
+            <h1 class="headings">Mirte van der Spek</h1>
+            <h2 class="subheader">Antoni van Leeuwenhoek Ziekenhuis - Oncology department</h2>
+          </div>
+        </div>
+        <button class="showmore">Show more</button>
+        <p class="speakerinfo">
+          Sinds juni 2021 ben ik werkzaam als verpleegkundig specialist bij de
+          mamma interne geneeskunde in het Antoni van Leeuwenhoek. Het Antoni
+          van Leeuwenhoek spreekt mij aan door de combinatie van
+          multidisciplinaire zorg & wetenschappelijk onderzoek. Dit zorgt voor
+          een hele fijne samenwerking tussen de verschillende betrokken
+          disciplines en bovenal voor excellente- en persoonsgerichte zorg voor
+          de patiënten.
+        </p>
+
+
+      </div>
+    </div>
+
+    <!-- contourings  -->
+    <div class="container">
+      <div class="contourings">
+        <h1 class="headings">Contourings from this webinar</h1>
+
+        <div class="card">
+          <!-- card-one  -->
+          <div class="carddiv">
+            <h1 class="cardheader">IMA 4-31</h1>
+            <p class="cardinfo">Accessory parotid</p>
+
+            <img
+            src="/assets/contouring.jpeg"
+            alt="Image of a ct scan"
+            class="cardimg"
+            />
+          </div>
+
+          <!-- card-two  -->
+          <div class="carddiv">
+              <h1 class="cardheader">IMA 4-31</h1>
+              <p class="cardinfo">Accessory parotid</p>
+  
+              <img
+              src="/assets/contouring.jpeg"
+              alt="Image of a ct scan"
+              class="cardimg"
+              />
+            </div>
+
+          <!-- card-three  -->
+          <div class="carddiv">
+              <h1 class="cardheader">IMA 4-31</h1>
+              <p class="cardinfo">Accessory parotid</p>
+  
+              <img
+              src="/assets/contouring.jpeg"
+              alt="Image of a ct scan"
+              class="cardimg"
+              />
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Articles  -->
+
+    <div class="container">
+      <div class="contourings">
+        <h1 class="headings">Related articles</h1>
+
+        <div class="card">
+          <!-- card-one  -->
+          <div class="carddiv">
+            <div class="articlecardsmall">
+            <h1 class="cardheader">Fractionation in head & neck</h1>
+            <p class="cardinfo">Mirthe van der Spek</p>
+
+            <img src="/assets/article1.png" 
+            alt="Article header that reads fractionation in head and neck"
+            class="cardimg" />
+          </div>
+          </div>
+
+          <!-- card-two  -->
+          <div class="carddiv">
+            <div class="articlecardsmall">
+              <h1 class="cardheader">Gastrointestinal</h1>
+              <p class="cardinfo">Mirthe van der Spek</p>
+  
+              <img
+              src="/assets/article2.png" 
+              alt="Article header that reads gastrointestinal"
+              class="cardimg"
+              />
+            </div>
+            </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- footer  -->
+    <footer>
+      <p>&copy; 2024 All rights reserved.</p>
+      <ul>
+          <li><a href="#">Disclaimer</a></li>
+          <li><a href="#">Privacy Statement</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+      </ul>
+  </footer>
+    <script>
+      let showMoreButton = document.querySelector('.showmore');
+      showMoreButton.addEventListener('click', function() {
+    showMoreButton.classList.add('showingmore');
+})
+
+let hamburgerButton = document.querySelector('.sidenav');
+      hamburgerButton.addEventListener('click', function() {
+    hamburgerButton.classList.add('openNav', 'backgroundblur');
+  })
+    </script>
+
+  </body>
+</html>
