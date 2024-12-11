@@ -7,7 +7,7 @@
     <title>Oncollaboration</title>
 <link rel="stylesheet" href="https://nawallox.github.io/look-and-feel-styleguide/oncollaboration.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="javascript" href="index.js">
+    <script src="index.js" defer></script>
   </head>
   <body>
 
@@ -22,22 +22,25 @@
               <li><a class="navbuttons" href="#">Contouring</a></li>
               <li><a class="navbuttons" href="#">Articles</a></li>
               <li><a class="navbuttons" href="#">Profile</a></li>
-              <span
-              class="hamburger"
-              style="font-size: 34px; cursor: pointer; color: white;"
-              >&#9776;</span
-            >
           </ul>
       </nav>
-      <div class="search">
-          <input type="text" placeholder="I'm looking for...">
-      </div>
+
+<!-- Searchbar  -->
+
+      <form class="searchbar">
+        <fieldset>
+          <input class="search" type="text" placeholder="I'm looking for..." required>
+          <button class="submitbutton" type="submit">submit</button>
+        </fieldset>
+      </form>
   </header>
 
   <section class="main-page">
         </div>
       </div>
     </div>
+
+<!-- Webinar  -->
 
     <div class="container">
       <h2 class="headings">Now playing: </h2>
@@ -50,6 +53,9 @@
           ></iframe>
         </div>
 
+<!-- Comments  -->
+
+        
         <div class="commentsection">
           <h1 class="headings">Comment</h1>
           <textarea
