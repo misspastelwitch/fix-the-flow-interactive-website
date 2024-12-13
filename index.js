@@ -23,14 +23,12 @@ inputElement.addEventListener('invalid', function(ev) {
 });
 
 //trying to get the search field to go back to white after being clicked in invalid state
-let inputElement = document.querySelector('input');
-inputElement.addEventListener('click', clickHandler) {
-  function clickHandler(event) {
-    if (event.click = true) {
-        input.classList.add('click');
-  }
-}
-}
+//let inputElement = document.querySelector('input');
+//inputElement.addEventListener('click', clickHandler) {
+//function clickHandler(event) {
+//    if (event.click = true) {
+//        input.classList.add('click');
+ // }}}
 
 
 
