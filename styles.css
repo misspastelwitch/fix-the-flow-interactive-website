@@ -20,7 +20,7 @@
 
     --button-normal: #F0E5E9;
     --button--text-normal: #1F000B;
-    --button-hover: #6a0025;
+    --button-hover: #4e041e;
     --button-text-active: #fff;
     --button-active:  #B47F92;
     --button-active-hover: #4A0019;
@@ -67,8 +67,7 @@ header {
 /*Navigation*/
 
 logo {
-    width: 125px;
-    height: 75px;
+float: left;
 }
 
 nav ul {
@@ -85,34 +84,15 @@ nav ul li a {
     font-weight: bold;
 }
 
-/*  */
+/* buttons */
 navbuttons {
-
-	padding:.5em 1em;
-	
-	background-image:
-		linear-gradient(
-			45deg,
-			var(#6a0025),
-			var(#e15f8d),
-			var(#f191b2),
-
-		);
-	background-size:200% 200%;
-	background-position:left bottom;
-	border:none;
-	border-radius:2em;
-	
-	font:inherit;
-	color:var(--wit);
-	
-	outline:none;
-	cursor:pointer;
-	
-	animation:navbuttons 2s infinite linear paused;
+    padding: var(--button-padding);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
-
-
+navbuttons:hover {
+    background-color: var(--button-hover);
+    color: var(--button-text-active);
+}
 
 input[type="text"]:user-invalid {
     background-color: #B47F92 !important;
@@ -120,18 +100,9 @@ input[type="text"]:user-invalid {
 inputclick {
     background-color: #F0E5E9;
 }
- button:hover,
- button:focus-visible{
-	animation-play-state:running;
-}
 
 .submitbutton {
 visibility: hidden;
-}
-
-button:active {
-	box-shadow:inset 0 .5em 0 var(--zwart);
-	padding:1em 1em 0em;
 }
 */
 
