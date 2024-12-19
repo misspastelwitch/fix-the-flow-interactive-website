@@ -171,7 +171,7 @@ iframe {
     border: none;
     font-size: 16px;
     cursor: pointer;
-    margin-top: 10px
+    margin-top: 10px;
 }
 
 /*Speaker Card Show More button*/
@@ -344,6 +344,11 @@ iframe {
     margin-bottom: 2rem
 }
 
+.articles:hover {
+    background-color: #B47F92;
+    color: #F0E5E9; 
+}
+
 
 .articlecard {
     gap:1rem;
@@ -369,6 +374,27 @@ iframe {
     font-size: 16px;
     cursor: pointer
 
+}
+.category-wrapper {
+    justify-content: space-evenly;
+    color: #F0E5E9;
+    margin-top: 20px;
+
+    @media screen and (min-width:900px) {
+        justify-content: start;
+    }
+}
+
+.links {
+    width: 119px;
+    height: 40px;
+    border-radius: 10px;
+    background: #6b0237;
+    color: #fadddd;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;   
 }
 
 /* Footer */ 
